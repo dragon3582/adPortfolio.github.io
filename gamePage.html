@@ -1,0 +1,47 @@
+<!doctype html>
+<script src="gameFolder/code/canvasdisplay.js"></script>
+<script src="gameFolder/code/game.js"></script>
+<script src="gameFolder/code/game_levels.js"></script>
+<script src="gameFolder/code/loadingScreen.js"></script>
+
+<link rel="stylesheet" href="gameFolder/css/game.css">
+
+<body>
+	
+	
+	
+	<button id='startButton' type='submit' onclick='runTheGame()'>Ready to play the game? Click to Start.</button>
+	
+	<div id= 'contain' style='position:relative;'>
+	<canvas id = 'canvas' width = 500 height = 500 style='z-index: 5;' ></canvas>
+	<canvas id = 'myCanvas' width = 10 height = 10 style='position: absolute; z-index: 4; top: 50%;'></canvas>
+	<canvas id = 'gameCanvas' width = 500 height = 550 style= 'visibility: hidden; position: absolute; z-index: 3; top: 1%; left:50%;'></canvas>
+	</div>
+	
+	<a href="index.html" class="otherBtn">Click to go back to the portfolio</a>
+	
+	<script>
+	
+	function runTheGame()
+	{
+		var canvasRef = document.getElementById('canvas');
+		var buttonRef = document.getElementById('startButton');
+		var myCanvasRef = document.getElementById('myCanvas');
+		var gameCanvRef = document.getElementById('gameCanvas');
+		gameCanvRef.style.visibility = 'visible';
+		gameCanvRef.height = window.innerHeight/(5/3);
+		gameCanvRef.width = window.innerWidth/2.5;
+		buttonRef.style.visibility = 'hidden';
+		canvasRef.remove();
+		myCanvasRef.style.visibility = 'visible';
+		init();
+		setTimeout(function() {
+			myCanvasRef.remove();
+			runGame(GAME_LEVELS, DOMDisplay);
+		},5000);
+		
+		
+	}
+		
+	</script>
+</body>

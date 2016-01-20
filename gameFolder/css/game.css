@@ -1,0 +1,218 @@
+.background{
+	background: url(clouds.jpeg);
+	background-size: 100% 100%;
+    table-layout: fixed;
+    border-spacing: 0;   
+}
+
+.background td {
+	padding: 0;
+}
+
+.arrowTut {
+	background: url(arrows.png);
+}
+
+.gravTut {
+	background: url(lowGrav.png);
+}
+
+.energyTut {
+	background: url(energyOrbs.png);
+}
+
+.lavaTut {
+	background: url(thisLava.png);
+}
+
+.beginGame {
+	background: url(beginGame.png);
+}
+
+.bounce {
+	background: url(bouncePlat.png);
+}
+
+.timing {
+	background: url(timing.png);
+}
+
+.lava {
+	background: url(lavaStuff.jpg);
+	background-size: 55px 55px;
+}
+
+.wall{
+	background: url(walls.jpg);
+}
+
+.runTip {
+	background: url(runTip.png);
+}
+
+.airFan{
+	background: url(smoke.png);
+	border-radius: 50px;
+	background-position: 25% 30%;
+}
+
+.airTip{
+	background: url(smokeTip.png);
+}
+
+.airGuide{
+	background: url(smokeGuide.png);
+}
+
+.wall2{
+	background: url(walls.jpg);
+	box-shadow: inset 0px -15px 25px -10px rgb(0, 184 , 230);
+	                 
+}
+
+.lost .player {
+	background: rgb(160, 64, 64);
+	box-shadow: inset 0px -25px 10px -10px rgb(160, 64 ,69);
+
+}
+
+.won .player{	
+	
+	box-shadow: inset  0px  2px 5px gold, inset 0px  2px 5px gold, 0px  2px 5px gold, 0px  2px 5px gold,;
+	border-radius: 25px;
+	
+}
+
+.backWin{
+	background: url(youWinTheGame.gif);
+	background-repeat: no-repeat;
+	background-position: -5px 45%;
+}
+
+.leftRun .player{
+	background: url(runAnim.gif);
+	background-repeat: no-repeat;
+	background-position: 15px 3px;
+	transform: rotateY(180deg);
+	padding-right:20px;
+	margin-left: -10px;
+	margin-right: 550px;
+	margin-bottom: 10px;
+
+}
+
+.run .player { 	
+	background: url(runAnim.gif);
+	background-repeat: no-repeat;
+	background-position: -3px 3px;
+	padding-right: 20px;
+	margin-left: -10px;
+	margin-right: 550px;
+	margin-bottom: 10px;
+	
+
+}
+.air .player {
+	background: url(airAnim.gif);
+	background-repeat: no-repeat;
+	background-position: -3px 3px;
+	padding-left: 20px;
+	margin-left: -10px;
+	margin-right: 550px;
+	margin-bottom: 10px;
+	
+}
+
+.leftAir .player{
+	background: url(airAnim.gif);
+	background-repeat: no-repeat;
+	transform: rotateY(180deg);
+	background-position: 15px 3px;
+	padding-right: 20px;
+	margin-left: -10px;
+	margin-right: 550px;
+	margin-bottom: 10px;
+	
+}
+
+.actor {
+	position: absolute;
+}
+
+.idle .player { 
+	background: url(idleAnim.gif); 
+	background-repeat: no-repeat;
+	background-position: -3px 3px;
+	padding-right: 20px;
+	margin-left: -10px;
+	margin-right: 550px;
+	margin-bottom: 10px;
+	
+	
+}
+.coin {
+	background: url(energyBall.gif); 
+	padding: 4px;
+	background-repeat: no-repeat;
+	box-shadow: inset  0px  2px 6px black, inset 0px  2px 6px black, 0px  2px 5px black, 0px  2px 6px black,;
+	border-radius: 30px;
+}
+
+.pickUp {
+	background: url(gravLow.png);
+	background-size: 25px 25px;
+	
+	}
+
+
+.game {
+	overflow: hidden;
+	width: 50%;
+	height: 35em;
+	position: relative;
+	z-index: 1;
+}
+
+.otherBtn {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  bottom: 5%;
+  z-index: -1;
+  color: red;
+}
+
+.otherBtn:hover {
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+}
+
+#startButton {
+	font-family:'Jokerman';
+	font-size: 20px;
+	z-index: 6;
+	position: absolute;
+	width: 20%;
+	background: white;
+	box-shadow: inset 0 25px 55px -25px rgba(200,0,0,0.7);
+	background-image: url(fire.gif);
+	background-position: -3px -25px;
+	top:70%;
+	right: 45%;
+}
+
+#gameCanvas {
+	
+	background: url(walls.jpg);
+
+}

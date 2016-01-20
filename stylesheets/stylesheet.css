@@ -222,6 +222,69 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
+#thumbnails {
+	position: relative;
+	margin: 10%, auto;
+	width: 40em;
+	height: 37em;
+}
+
+.thumbnail span{
+	position:absolute;
+	visibility:hidden;
+}
+
+.thumbnail:hover, .thumbnail:hover span{
+	visibility: visible;
+	left: -10%; 
+	top: 25%; 
+	width: 90%;
+	height: 90%;
+	z-index: 1;
+}
+
+.thumbnail2 span{
+	position:absolute;
+	visibility:hidden;
+}
+
+.thumbnail2:hover, .thumbnail2:hover span{
+	visibility: visible;
+	left: -10%; 
+	top: 25%;
+	width: 90%;
+	heigh: 90%;	
+	z-index: 1;
+}
+
+.thumbnail3 span{
+	position:absolute;
+	visibility:hidden;
+}
+
+.thumbnail3:hover, .thumbnail3:hover span{
+	visibility: visible;
+	left: -10%; 
+	top: 25%;
+	width: 90%;
+	heigh: 90%;	
+	z-index: 1;
+}
+
+.thumbnail4 span{
+	position:absolute;
+	visibility:hidden;
+}
+
+.thumbnail4:hover, .thumbnail4:hover span{
+	visibility: visible;
+	left: -10%; 
+	top: 25%;
+	width: 100%;
+	heigh: 100%;	
+	z-index: 1;
+}
+
 /* Links
    a, a:hover, a:visited
 */
