@@ -222,6 +222,14 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
+#iconPic {
+	position: absolute;
+	left: 14%;
+	top: 5%;
+	border-radius: 50px;
+}
+
+
 #thumbnails {
 	position: relative;
 	margin: 10%, auto;
@@ -237,7 +245,7 @@ hr {
 .thumbnail:hover, .thumbnail:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 35%; 
+	top: 38%; 
 	width: 90%;
 	height: 90%;
 	z-index: 1;
@@ -251,7 +259,7 @@ hr {
 .thumbnail2:hover, .thumbnail2:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 35%;
+	top: 38%;
 	width: 90%;
 	heigh: 90%;	
 	z-index: 1;
@@ -265,7 +273,7 @@ hr {
 .thumbnail3:hover, .thumbnail3:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 35%;
+	top: 38%;
 	width: 90%;
 	heigh: 90%;	
 	z-index: 1;
@@ -279,11 +287,12 @@ hr {
 .thumbnail4:hover, .thumbnail4:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 35%;
+	top: 38%;
 	width: 100%;
 	heigh: 100%;	
 	z-index: 1;
 }
+
 
 #playButton {
 	
