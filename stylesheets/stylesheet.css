@@ -237,7 +237,7 @@ hr {
 .thumbnail:hover, .thumbnail:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 25%; 
+	top: 35%; 
 	width: 90%;
 	height: 90%;
 	z-index: 1;
@@ -251,7 +251,7 @@ hr {
 .thumbnail2:hover, .thumbnail2:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 25%;
+	top: 35%;
 	width: 90%;
 	heigh: 90%;	
 	z-index: 1;
@@ -265,7 +265,7 @@ hr {
 .thumbnail3:hover, .thumbnail3:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 25%;
+	top: 35%;
 	width: 90%;
 	heigh: 90%;	
 	z-index: 1;
@@ -279,10 +279,17 @@ hr {
 .thumbnail4:hover, .thumbnail4:hover span{
 	visibility: visible;
 	left: -10%; 
-	top: 25%;
+	top: 35%;
 	width: 100%;
 	heigh: 100%;	
 	z-index: 1;
+}
+
+#playButton {
+	
+	position: absolute;
+	right: 50%;
+
 }
 
 /* Links
