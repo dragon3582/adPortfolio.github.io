@@ -224,19 +224,20 @@ hr {
 
 #iconPic {
 	position: absolute;
-	left: 12%;
-	top: 5%;
-	border-radius: 70px;
-}
-
-#iconPic @media only screen and (min-device-width: 30%)
- {
-	position: absolute;
 	left: 4%;
 	top: 2.5%;
 	border-radius: 70px;
 }
 
+@media only screen and (min-device-width: 30%){
+	#iconPic 
+	{
+		position: absolute;
+		left: 12%;
+		top: 5%;
+		border-radius: 70px;
+	}
+}
 
 #thumbnails {
 	position: relative;
