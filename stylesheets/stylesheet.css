@@ -224,9 +224,9 @@ hr {
 
 #iconPic {
 	position: absolute;
-	left: 14%;
-	top: 5%;
-	border-radius: 50px;
+	left: 10%;
+	top: 4%;
+	border-radius: 70px;
 }
 
 
@@ -242,7 +242,7 @@ hr {
 	visibility:hidden;
 }
 
-.thumbnail:hover, .thumbnail:hover span{
+.thumbnail:hover, .thumbnail:hover span, .thumbnail:focus, .thumbnail:focus span{
 	visibility: visible;
 	left: -10%; 
 	top: 38%; 
@@ -256,7 +256,7 @@ hr {
 	visibility:hidden;
 }
 
-.thumbnail2:hover, .thumbnail2:hover span{
+.thumbnail2:hover, .thumbnail2:hover span, .thumbnail2:focus, .thumbnail2:focus span {
 	visibility: visible;
 	left: -10%; 
 	top: 38%;
@@ -270,7 +270,7 @@ hr {
 	visibility:hidden;
 }
 
-.thumbnail3:hover, .thumbnail3:hover span{
+.thumbnail3:hover, .thumbnail3:hover span, .thumbnail3:focus, .thumbnail3:focus span{
 	visibility: visible;
 	left: -10%; 
 	top: 38%;
@@ -284,7 +284,7 @@ hr {
 	visibility:hidden;
 }
 
-.thumbnail4:hover, .thumbnail4:hover span{
+.thumbnail4:hover, .thumbnail4:hover span, .thumbnail4:focus, .thumbnail4:focus span{
 	visibility: visible;
 	left: -10%; 
 	top: 38%;
