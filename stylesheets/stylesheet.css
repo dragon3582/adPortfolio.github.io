@@ -310,6 +310,35 @@ hr {
 
 }
 
+#gamesTab {
+	position: absolute;
+	right: 25%;
+	width: 8%;
+	height: 3%;
+	text-align: center;
+}
+
+#modelsTab {
+	position: absolute;
+	left: 25%;
+	width: 8%;
+	height: 3%;
+	text-align: center;
+}
+
+#mainTab {
+	position: absolute;
+	left: 45%;
+	width: 8%;
+	height: 3%;
+	text-align: center;
+}
+
+#barrelSpan {
+
+	background: radial-gradient(rgba(220, 220, 220, 1) 0%, rgba(200, 200, 200, 0) 85%);
+}
+
 /* Links
    a, a:hover, a:visited
 */
