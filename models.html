@@ -3,12 +3,14 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
+	
+	<script src="javascripts/embed3dStuff.js"></script>
+	
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Anthony DiDonna Portfolio</title>
+    <title>Anthony DiDonna</title>
   </head>
 
   <body>
@@ -16,7 +18,7 @@
     <header>
       <div class="container">
         <h1>Anthony DiDonna</h1>
-        <h4>Portfolio</h4>
+        <h4>Game Developer</h4>
 		<img id = "iconPic" width = 140 height = 140 src = "images/dragon.jpg">
 
         <section id="downloads">
@@ -49,8 +51,50 @@
 
 	<div id = "thumbnails">
 	<p>
-	These are some 3D models I made. The program used to make the geometry was Maya 2014 and textures were made in Photoshop CC, but some of the renders were done in Blender using LuxRender. Hover over the pictures to expand them.
-	<br>
+	These are some 3D models I made for various purposes. The consoles are feedback displays for a game being worked on, while the barrel was a test object. 
+	The programs used to make the models was a mix of 3 programs: Blender, Maya, and 3D Coat.
+	<br><br>
+	
+	<a id = "previousButton" class = "btn" onclick = "changeEmbeddedContent(this.id)">Previous model</a>
+	<a id = "nextButton" class = "btn" onclick = "changeEmbeddedContent(this.id)">Next model</a>
+	
+	<br><br><br>
+	<div class="sketchfab-embed-wrapper"><iframe id = "3dcontent" width="640" height="480" src="https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+
+		<p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+		<a id = "Model Name" href="https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Critical Mass Console</a>
+		by <a href="https://sketchfab.com/adidonna?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Anthony DiDonna</a>
+		on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+		</p>
+	</div>
+	
+	<br><br>
+	
+	<br><br><br>
+	
+	<script type= 'text/javascript'>
+	//use this script tag to pass the src's back and forth
+	
+		function changeEmbeddedContent(buttonClicked)
+		{
+			var modelSrcLink = document.getElementById("3dcontent");
+			var content = modelSrcLink.src;
+			var nameLink = document.getElementById("Model Name");
+			var overviewRef = document.getElementById("overviewPic");
+			var overSrc = overviewRef.src;
+			//alert(buttonClicked);
+			
+			var newSrcLink = {};
+			newSrcLink = embeddedContent(content, nameLink, buttonClicked, overSrc);
+			
+			modelSrcLink.src = newSrcLink.modelURL;
+			nameLink.href = newSrcLink.nameURL;
+			nameLink.textContent = newSrcLink.nameText;
+			overviewRef.src = newSrcLink.modelOverview;
+		}
+		
+	</script>
+	<!--
 	<a class="thumbnail2">
 	<img src="images/houseFrontThumb.png" width="150px" height="100px" border="0"><span><img src="images/DiDonna_Anthony_SwampHouse_front_Textured.jpg"><br> House Front</span></a>
 
@@ -62,7 +106,7 @@
 	
 	<a class="thumbnail4">
 	<img src="images/barrelThumb.png" width="100px" height="120px" border="0"><span id = "barrelSpan"><img src="images/barrelPicRealistic.png"><br> Realistic Barrel</span></a>
-
+	-->
 	
 	</p>
 	</div>
@@ -70,7 +114,11 @@
 	
       </section>
     </div>
-
+	<br><br><br>
+	
+	<img id = "overviewPic" src = "images/ConsoleOverview.png"></img>
     
+	<br><br><br>
+	
   </body>
 </html>
