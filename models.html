@@ -55,8 +55,8 @@
 	The programs used to make the models was a mix of 3 programs: Blender, Maya, and 3D Coat.
 	<br><br>
 	
-	<a id = "previousButton" class = "btn" onclick = "changeEmbeddedContent(this.id)">Previous model</a>
-	<a id = "nextButton" class = "btn" onclick = "changeEmbeddedContent(this.id)">Next model</a>
+	<a id = "previousButton" class = "btn" onclick = "init(this.id)">Previous model</a>
+	<a id = "nextButton" class = "btn" onclick = "init(this.id)">Next model</a>
 	
 	<br><br><br>
 	<div class="sketchfab-embed-wrapper"><iframe id = "3dcontent" width="640" height="480" src="https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60/embed" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
@@ -71,12 +71,11 @@
 	<br><br>
 	
 	<br><br><br>
-	
+	<!--
 	<script type= 'text/javascript'>
 	//use this script tag to pass the src's back and forth
 	
-		function changeEmbeddedContent(buttonClicked)
-		{
+		//initialize the stuff into the array
 			var modelSrcLink = document.getElementById("3dcontent");
 			var content = modelSrcLink.src;
 			var nameLink = document.getElementById("Model Name");
@@ -84,8 +83,14 @@
 			var overSrc = overviewRef.src;
 			//alert(buttonClicked);
 			
+			
+		
+		document.onload = embeddedContent(content, nameLink, overSrc);
+		
+		function init(buttonClicked)
+		{
 			var newSrcLink = {};
-			newSrcLink = embeddedContent(content, nameLink, buttonClicked, overSrc);
+			newSrcLink = changeModel(buttonClicked);
 			
 			modelSrcLink.src = newSrcLink.modelURL;
 			nameLink.href = newSrcLink.nameURL;
@@ -94,7 +99,7 @@
 		}
 		
 	</script>
-	<!--
+	
 	<a class="thumbnail2">
 	<img src="images/houseFrontThumb.png" width="150px" height="100px" border="0"><span><img src="images/DiDonna_Anthony_SwampHouse_front_Textured.jpg"><br> House Front</span></a>
 
@@ -118,6 +123,33 @@
 	
 	<img id = "overviewPic" src = "images/ConsoleOverview.png"></img>
     
+	<script type= 'text/javascript'>
+	//use this script tag to pass the src's back and forth
+	
+		//initialize the stuff into the array
+			var modelSrcLink = document.getElementById("3dcontent");
+			var content = modelSrcLink.src;
+			var nameLink = document.getElementById("Model Name");
+			var overviewRef = document.getElementById("overviewPic");
+			var overSrc = overviewRef.src;
+			//alert(buttonClicked);
+			
+			
+		
+		document.onload = embeddedContent(content, nameLink, overSrc);
+		
+		function init(buttonClicked)
+		{
+			var newSrcLink = {};
+			newSrcLink = changeModel(buttonClicked);
+			
+			modelSrcLink.src = newSrcLink.modelURL;
+			nameLink.href = newSrcLink.nameURL;
+			nameLink.textContent = newSrcLink.nameText;
+			overviewRef.src = newSrcLink.modelOverview;
+		}
+		
+	</script>
 	<br><br><br>
 	
   </body>

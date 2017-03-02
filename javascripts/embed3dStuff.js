@@ -1,6 +1,9 @@
 
+	var modelArray = [];
+	var index;
+
 //take in content here
-	function embeddedContent(model, name, button, overPic)
+	function embeddedContent(model, name, overPic)
 	{
 		
 		var modelInfo = {
@@ -12,10 +15,6 @@
 		};
 		
 		//alert(modelInfo.nameText);
-		
-		var index;
-		
-		var modelArray = [];
 		
 		
 		var modelLinkArray = ["https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60/embed",
@@ -58,7 +57,7 @@
 				index = i;
 			}
 		}
-		
+		/*
 		if(button == "nextButton")
 		{
 			index++;
@@ -70,6 +69,30 @@
 			return modelArray[index];
 		}
 		else if(button == "previousButton")
+		{
+			index--;
+			if(index < 0)
+			{
+				index = modelArray.length-1;
+			}
+			return modelArray[index];
+		}*/
+		
+	}
+	
+	function changeModel(Nbutton)
+	{
+		if(Nbutton == "nextButton")
+		{
+			index++;
+			if(index >= modelArray.length)
+			{
+				index = 0;
+			}
+			//alert(modelArray[index].modelURL);
+			return modelArray[index];
+		}
+		else if(Nbutton == "previousButton")
 		{
 			index--;
 			if(index < 0)
