@@ -327,7 +327,7 @@ hr {
 
 #gamesTab {
 	position: absolute;
-	right: 25%;
+	left: 50%;
 	width: 8%;
 	height: 3%;
 	text-align: center;
@@ -335,7 +335,7 @@ hr {
 
 #modelsTab {
 	position: absolute;
-	left: 25%;
+	left: 28%;
 	width: 8%;
 	height: 3%;
 	text-align: center;
@@ -343,7 +343,15 @@ hr {
 
 #aboutMe {
 	position: absolute;
-	left: 45%;
+	left: 39%;
+	width: 8%;
+	height: 3%;
+	text-align: center;
+}
+
+#techart {
+	position: absolute;
+	left: 61%;
 	width: 8%;
 	height: 3%;
 	text-align: center;
