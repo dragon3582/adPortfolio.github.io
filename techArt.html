@@ -37,7 +37,31 @@
 	<br><br><br>
 	
 	<h3>
-	<a id="javascript-game" class="anchor" href="#javascript-game" aria-hidden="true"><span class="octicon octicon-link"></span></a>Going to show off some technical art stuff i've done here.</h3>
+	<a id="VertexPaintMaterial"class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vertex Painted Master Material</h3>
+	
+	<p> In <a href="index.html#fenrir">Fenrir Unchained</a>, I wanted to tackle the ability to use modular assets and be able to use them anywhere so they all line up with the texture perfectly, and not feel 
+	like its all the same thing being repeated. The first step was to figure out the texture tiling.
+	<br><br>
+	
+	<img src ="TechGifs/WorldAlignTile.gif"</img>
+	<br><br>
+	As you can see with the gif above, I managed to do this by utilizing a world aligned material approach to be able to tile objects seamlessly. The extra perk to this is that we could even scale things to be massive, and it would still tile without stretching.
+	
+	<br><br>
+	
+	The next step in the process was to figure out how to make things seem varied enough while not putting too much more effort onto the artists to create a lot of unique textures for each asset, thus requiring a new material instance for it. 
+	So instead, I decided to use vertex colors as a way to make things more varied. I used Unreal Engine 4's ability to paint vertex colors on meshes in engine to do this process. I took the modular wall mesh and subdivided it to give me enough
+	vertices to give me more precise control over what I was going to paint. Then I modified the material the wall was using to do a height lerp in between two types of textures and their respective normal maps. Since the style of the game was 
+	a snowy environment, I had a tileable snow texture and normal map to lerp between. To increase the amount of variation even more, I utilized two more vertex color channels to give some color stains on the bricks and give the snow a bit of a blue-ish tint on edges.
+	<br><br>
+	
+	<img src="TechGifs/VertexPaint.gif"</img>
+	
+	<br><br>The master material itself ended up being quite messy in terms of wires connected to different places everywhere, but it allowed for a lot of variation in the modular assets that I was looking for. I was even able to make some of the 
+	texture sampler nodes that were used in the original as parameters to be reusable and used with different textures in different places as needed. As you can see below, it was also used for this staircase for the ability to add snow and discolor the stones.
+	<br><br>
+	<img src="images/Stairs.png"></img>
+	</p>
 
 	
       </section>
