@@ -19,22 +19,22 @@
 		
 		var modelLinkArray = ["https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60/embed",
 							  "https://sketchfab.com/models/c9d049309b1447ae84212e52922bc562/embed",
-							  "https://sketchfab.com/models/3c92609696144e9c8fc9ff78f6c0e2d5/embed"
+							  "https://sketchfab.com/models/ed9471eb9bd147c59d996fc886370e7b/embed"
 							  ];
 		//alert(modelLinkArray[0]);	  
 		var nameURLArray = ["https://sketchfab.com/models/7f77833ff9b84733b4cb221bb37a2b60?utm_medium=embed&utm_source=website&utm_campain=share-popup",
 							"https://sketchfab.com/models/c9d049309b1447ae84212e52922bc562?utm_medium=embed&utm_source=website&utm_campain=share-popup",
-							"https://sketchfab.com/models/3c92609696144e9c8fc9ff78f6c0e2d5?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+							"https://sketchfab.com/models/ed9471eb9bd147c59d996fc886370e7b?utm_medium=embed&utm_source=website&utm_campain=share-popup"
 							];
 		
 		var nameArray = ["Critical Mass Console",
 						 "Energy Reading Console",
-						 "Realistic Style Barrel"
+						 "Stylized small barrier"
 						 ];
 						 
 		var overviewPicArray = ["images/ConsoleOverview.png",
 								"images/ConsoleOverview.png",
-								"images/BarrelOverview.png"
+								"images/WallOverview.png"
 								];
 		
 		var theName;
