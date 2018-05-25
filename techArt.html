@@ -36,16 +36,27 @@
 	<a id = "techart" href="techArt.html" class="btn">Technical Art</a>
 	<br><br><br>
 	
-	<h3>
-	<a id="VertexPaintMaterial"class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vertex Painted Master Material</h3>
+	<h1>Technical Art</h1><br>
+	<div id="techartBlurb">
+	In this area I have a collection of Technical art related things I have put together that represent some of the things that were in games I have had a hand in making.
+	</div><br>
+	
+	<ul>
+		<li><a href="techArt.html#VertexPaintMaterial">Vertex Paint Master Material</li>
+		
+		
+	</ul><br>
+	<h2>
+	<a id="VertexPaintMaterial"class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vertex Paint Master Material</h2>
 	
 	<p> In <a href="index.html#fenrir">Fenrir Unchained</a>, I wanted to tackle the ability to use modular assets and be able to use them anywhere so they all line up with the texture perfectly, and not feel 
-	like its all the same thing being repeated. The first step was to figure out the texture tiling.
+	like its all the same thing being repeated. One of the catches to this, is that I also wanted the ability to scale up the modular asset, and still have them be tiling perfectly. The first step was to figure out the texture tiling.
 	<br><br>
 	
 	<img src ="TechGifs/WorldAlignTile.gif"</img>
 	<br><br>
-	As you can see with the gif above, I managed to do this by utilizing a world aligned material approach to be able to tile objects seamlessly. The extra perk to this is that we could even scale things to be massive, and it would still tile without stretching.
+	As you can see with the gif above, I managed to do this by utilizing a world aligned material approach to be able to tile objects seamlessly. Because the material was world aligned, it could be scaled 
+	way up, and it would still tile without stretching. This would later be helpful to be able to made differently sized rock meshes and be able to stack them together to create unique shapes for a rock wall.
 	
 	<br><br>
 	
@@ -57,8 +68,8 @@
 	
 	<img src="TechGifs/VertexPaint.gif"</img>
 	
-	<br><br>The master material itself ended up being quite messy in terms of wires connected to different places everywhere, but it allowed for a lot of variation in the modular assets that I was looking for. I was even able to make some of the 
-	texture sampler nodes that were used in the original as parameters to be reusable and used with different textures in different places as needed. As you can see below, it was also used for this staircase for the ability to add snow and discolor the stones.
+	<br><br>The master material itself ended up being quite large in terms of wires and nodes connected to different places everywhere, but it allowed for a lot of variation in the modular assets that I was looking for. And as I said before I was even able to parameterize the 
+	texture sampler nodes that were used in the original so they were reusable and could used with different textures in different places as needed. As you can see below, it was also used for this staircase for the ability to add snow and discolor the stones.
 	<br><br>
 	<img src="images/Stairs.PNG"></img>
 	</p>

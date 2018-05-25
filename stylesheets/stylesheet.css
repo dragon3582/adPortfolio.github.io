@@ -96,7 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main_content h1 {
-  font-size: 30px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 #main_content h2 {
@@ -192,7 +193,7 @@ hr {
   display: inline-block;
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
   padding: 8px 18px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 2px solid rgba(0, 0, 0, 0.7);
   border-bottom: 2px solid rgba(0, 0, 0, 0.7);
   border-top: 2px solid rgba(0, 0, 0, 1);
@@ -228,21 +229,81 @@ hr {
   background: url("../images/blacktocat.png") 0 0 no-repeat;
 }
 
-#iconPic {
-	position: absolute;
-	left: 4%;
-	top: 2.5%;
-	border-radius: 70px;
-}
 
 @media only screen and (min-device-width: 480px){
 	#iconPic 
 	{
 		position: absolute;
-		left: 12%;
-		top: 5%;
+		right: 0%;
+		top: 0%;
 		border-radius: 70px;
 	}
+	
+
+	#modelsTab 
+	{
+		position: absolute;
+		left: 28%;
+		width: 5%;
+		height: 3%;
+		text-align: center;
+		font-size: 10px;
+		}
+
+	#aboutMe 
+	{
+		position: absolute;
+		left: 39%;
+		width: 5%;
+		height: 3%;
+		text-align: center;
+		font-size: 10px;
+	}
+	
+	#gamesTab 
+	{
+		position: absolute;
+		left: 50%;
+		width: 5%;
+		height: 3%;
+		text-align: center;
+		font-size: 10px;
+	}
+
+	#techart 
+	{
+		position: absolute;
+		left: 61%;
+		width: 5%;
+		height: 3%;
+		text-align: center;
+		font-size: 10px;
+	}
+	
+	#previousButton 
+	{
+		position: absolute;
+		left: 25%;
+		width: 14%;
+		text-align: center;
+		font-size: 10px;
+	}
+
+	#nextButton 
+	{
+		position: absolute;
+		right: 25%;
+		width: 14%;
+		text-align: center;
+		font-size: 10px;
+	}
+}
+
+#iconPic {
+	position: absolute;
+	right: 1%;
+	top: 2%;
+	border-radius: 70px;
 }
 
 #overviewPic {
@@ -331,6 +392,7 @@ hr {
 	width: 8%;
 	height: 3%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #modelsTab {
@@ -339,6 +401,7 @@ hr {
 	width: 8%;
 	height: 3%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #aboutMe {
@@ -347,6 +410,7 @@ hr {
 	width: 8%;
 	height: 3%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #techart {
@@ -355,6 +419,7 @@ hr {
 	width: 8%;
 	height: 3%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #previousButton {
@@ -362,6 +427,7 @@ hr {
 	left: 25%;
 	width: 16%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #nextButton {
@@ -369,6 +435,7 @@ hr {
 	right: 25%;
 	width: 16%;
 	text-align: center;
+	font-size: 13px;
 }
 
 #barrelSpan {
