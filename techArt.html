@@ -16,8 +16,8 @@
     <header>
       <div class="container">
         <h1>Anthony DiDonna</h1>
-        <h4>Game Developer</h4>
-		<img id = "iconPic" width = 140 height = 140 src = "images/dragon.jpg">
+        <h3>Technical Artist</h3>
+		<!--<img id = "iconPic" width = 140 height = 140 src = "images/dragon.jpg">-->
 
         <section id="downloads">
           <a href="https://github.com/dragon3582" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
@@ -36,13 +36,13 @@
 	<a id = "techart" href="techArt.html" class="btn">Technical Art</a>
 	<br><br><br>
 	
-	<h1>Technical Art</h1><br>
+	<h1 id = "topofpage">Technical Art</h1><br>
 	<div id="techartBlurb">
-	In this area I have a collection of Technical art related things I have put together that represent some of the things that were in games I have had a hand in making.
+	In this area I have a collection of Technical art related things I have put together that represent some of the things that were in games I have had a hand in making. 
 	</div><br>
 	
 	<ul>
-		<li><a href="techArt.html#VertexPaintMaterial">Vertex Paint Master Material</li>
+		<li><a href="techArt.html#VertexPaintMaterial">Vertex Paint Master Material (UE4)</li>
 		
 		
 	</ul><br>
@@ -78,6 +78,28 @@
       </section>
     </div>
 
-    
+	<a style= "display: none" id="topButton" href="#topofpage" class="btn2 btn2-topicon"><span class="icon2"></span>Top</a>
+    <script>
+	
+	window.onscroll = function() {scrollFunction()};
+	
+	var element = document.getElementById("topofpage");
+	
+	function scrollFunction() {
+		if (element.scrollTop > 20) {
+			document.getElementById("topButton").style.display = "block";
+		} else {
+			document.getElementById("topButton").style.display = "none";
+		}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
+	</script>
+	
   </body>
 </html>
